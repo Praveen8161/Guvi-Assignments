@@ -5,7 +5,8 @@ let frou = Math.fround(2.60); // The nearest 32-bit single precision float repre
 let num = [25,23,52,457,569,452,478]
 let les = Math.min(...num); //Spread operaters is a 3 dots
 let hig = Math.max(...num);
-let aqr = Math.sqrt(3);
+let aqr = Math.sqrt(3); // 9
+let cqr = Math.cbrt(2); // 8
 let poe = Math.pow(3,2);
 let absolute = Math.abs(-8);
 let a = Math.ceil(52.25);
@@ -15,8 +16,8 @@ let y = Math.cos(50);
 let ran = Math.random(); //random num bw 0 to 1
 let ran1 = Math.random() *100; //random num bw 0 to 100
 // to get a random whole number 
-let whRan = Math.floor((Math.random()*100)+1); // from 1 to 100
-let exp = Math.ceil((Math.random()*100)+1);
+let whRan = Math.floor((Math.random()*100)+1); // from 1 to 100 includes 100
+let exp = Math.floor((Math.random()*(50-25)+1) + 25); // from 25 to 50 includes 50
 // upto 2 decimal points -> exp.toFixed(2);
 
 //array has reverse() and sort((a,b)=> a-b)
