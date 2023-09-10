@@ -13,7 +13,9 @@ let a = Math.ceil(52.25);
 let b = Math.floor(52.25);
 let x = Math.sin(50);
 let y = Math.cos(50);
-let ran = Math.random(); //random num bw 0 to 1
+
+
+let ran = Math.random(); //random num bw 0 to 1 (excluding 1)
 let ran1 = Math.random() *100; //random num bw 0 to 100
 // to get a random whole number 
 let whRan = Math.floor((Math.random()*100)+1); // from 1 to 100 includes 100
