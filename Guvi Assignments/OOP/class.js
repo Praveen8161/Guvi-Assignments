@@ -1,5 +1,8 @@
 //Class Declaration
 class CarProduction {
+    #price = "2500000"; // private property
+    //can't be changed and
+    // have to be declared in class scope
     constructor(name,color,fuelVariant,engineCapacity){
         this.name = name;
         this.color = color;
@@ -12,13 +15,16 @@ class CarProduction {
             Name : ${this.name}
             Color:${this.color}
             Fuel-Type:${this.fuelVariant}
-            Engine-Capacity:${this.engineCapacity} liter`);
+            Engine-Capacity:${this.engineCapacity} liter
+            price ${this.#price}`);
     }
 }
-const carl = new CarProduction("polo","red","diesel",1.5);
+const car1 = new CarProduction("polo","red","diesel",1.5);
 
-console.log(carl);
-carl.getDetai1s();
+console.log(car1);
+car1.name = "toyato";
+//car1.#price = 5000000; // can't be changed 
+car1.getDetai1s();
 
 class Features extends CarProduction{
     constructor(name,color,fuelVariant,engineCapacity,safety,model,carType,type){

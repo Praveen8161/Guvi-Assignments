@@ -1,2 +1,6 @@
-let str = "Hello, World!";
-console.log(typeof str === 'string');  // Outputs: true
+const a = prompt("hello visitors");
+if(a){
+    console.log(a);
+}else{
+    console.log("no input is given");
+}

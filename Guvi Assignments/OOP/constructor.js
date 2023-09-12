@@ -20,7 +20,7 @@ ManfuctureCar.prototype.getName = function(){
 const passat = new ManfuctureCar("passat","4 seat leather",1,"petrol");
 console.log(passat.seat1);
 passat.getName()
-//console.log(passat.engine1);
+console.log(passat.engine);
 //=======================================================================================
 function Person(firstName, lastName, age, eyeColor) {
     this.firstName = firstName; 
