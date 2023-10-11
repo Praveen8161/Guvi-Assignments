@@ -50,7 +50,7 @@ class Features extends CarProduction{
         }
     }
     getFeatures(){
-        let bhp = (this.engineCapacity * 100) /2.6;  //abstraction so nobady can change the value outside
+        let bhp = (this.engineCapacity * 100) /2.6;  //abstraction so nobady can change the value from outside
         console.log(`
         StarRating:${this.safety}  
         Model Name:${this.model}
@@ -60,7 +60,8 @@ class Features extends CarProduction{
         BHP : ${bhp}
         `)
     }
-    //Polymorpisam
+    //Polymorpisam // if it's a same as parent like this.fuelVarient we don't have to add this function here
+    //it will automaticallt take petrol as a getSpecialData();
     getSpecialData(){
         console.log(`The speciality of the vehicle is ${this.safety} `);
     }

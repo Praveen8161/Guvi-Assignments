@@ -6,7 +6,8 @@ const grandFather = {
     fatherObj: {
         house: "father house",
         getFatherHouse: function(){
-            console.log(this.house);
+            console.log(this.house); //called from methos sp represents the object
+            // where the method is called in this case fatherObj
         },
     },
 

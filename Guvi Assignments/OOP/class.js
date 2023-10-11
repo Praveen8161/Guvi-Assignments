@@ -1,8 +1,6 @@
 //Class Declaration
 class CarProduction {
-    #price = "2500000"; // private property
-    //can't be changed and
-    // have to be declared in class scope
+    #price = "2500000"; // private property - can't be changed and have to be declared in class scope
     constructor(name,color,fuelVariant,engineCapacity){
         this.name = name;
         this.color = color;
@@ -21,10 +19,10 @@ class CarProduction {
 }
 const car1 = new CarProduction("polo","red","diesel",1.5);
 
-console.log(car1);
+// console.log(car1);
 car1.name = "toyato";
 //car1.#price = 5000000; // can't be changed 
-car1.getDetai1s();
+// car1.getDetai1s();
 
 class Features extends CarProduction{
     constructor(name,color,fuelVariant,engineCapacity,safety,model,carType,type){
@@ -60,9 +58,12 @@ class Features extends CarProduction{
 }
 const car2 = new Features("tiguan","grey","petrol",4,5,"TopLine","SUV","Leather");
 
-console.log(car2);
-car2.getDetai1s();
-car2.getFeatures();
+// console.log(car2);
+// car2.getDetai1s();
+// car2.getFeatures();
+
+console.log(car2.safety); //using the getter method 
+car2.safety = 3; //using a setter method
 
 class CarOthers extends Features{
     constructor(name,color,fuelVariant,engineCapacity,safety,model,carType,type,tyre,availability){
@@ -86,10 +87,10 @@ class CarOthers extends Features{
 const car5 = new CarOthers("mahindrea","Royal Blue","gas","220cc",4,
                         "swagan","dabba","family Pack","bubble","in Stock");
 
-console.log(car5);
-car5.fullDetails();
-car5.getDetai1s();
-car5.getFeatures();
+// console.log(car5);
+// car5.fullDetails();
+// car5.getDetai1s();
+// car5.getFeatures();
 
 
 

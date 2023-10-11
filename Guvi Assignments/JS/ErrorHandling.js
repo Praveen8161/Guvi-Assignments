@@ -36,5 +36,5 @@ function customError(message){
     return this.stack;
 }
 console.log("Summa Testing ===================================");
-let a = customError("testing ============================== The End");
+let a = new customError("testing ============================== The End");
 console.log(a);

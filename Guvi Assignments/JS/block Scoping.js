@@ -64,9 +64,9 @@ if (true) {
   const shadow = "sx";
   if (true) {
     const shadow = "xy";
-    console.log("xy block :", shadow);
+    console.log("xy block :", shadow); //xy
   }
-  console.log("sx block", shadow);
+  console.log("sx block", shadow); //sx
 }
 // template literals
 
